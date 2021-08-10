@@ -1,22 +1,3 @@
-import React from 'react';
-import './App.css';
-import { Route } from 'react-router-dom';
-import HomePage from './pages/homepage/homepage.component';
-
-const HatsPage = () => (
-  <div>
-    <h1>Hats Page</h1>
-    <p>Welcome to hats page!</p>
-  </div>
-)
-
-function App() {
-  return (
-    <div>
-      <Route exact path="/" component={HomePage} />
-      <Route exact path="/shop/hats" component={HatsPage} />
-    </div>
-  );
-}
-
-export default App;
+version https://git-lfs.github.com/spec/v1
+oid sha256:93ad807bbb74bdf7e40e5c217a17597aef4ec91bbfe3d651d59aefd41d584c4a
+size 381
