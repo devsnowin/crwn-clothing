@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:93ad807bbb74bdf7e40e5c217a17597aef4ec91bbfe3d651d59aefd41d584c4a
-size 381
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Header from './components/header/header.component';
+import './App.css';
+import ShopPage from './pages/shop/shop.component';
+import HomePage from './pages/homepage/homepage.component';
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/shop" component={ShopPage} />
+      </Switch>
+    </div>
+  );
+}
+
+export default App;
