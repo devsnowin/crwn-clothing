@@ -8,6 +8,11 @@
 # testing
 /coverage
 
+# dotenv environment variables file
+.env
+.env.test
+.env.production
+
 # production
 /build
 
