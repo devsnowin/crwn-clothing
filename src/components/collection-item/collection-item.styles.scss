@@ -2,8 +2,10 @@
   width: 22%;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 420px;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 
   .image {
     width: 100%;
@@ -13,12 +15,32 @@
     margin-bottom: 5px;
   }
 
+  .custom-button {
+    opacity: 0.5;
+    width: 50%;
+    border: 0ch;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(80px);
+    transition: all 0.3s ease-in;
+  }
+
+  &:hover {
+    .custom-button {
+      opacity: 1;
+      transform: translateY(-80px);
+      display: flex;
+    }
+  }
+
   .collection-footer {
     width: 100%;
-    height: 5%;
+    height: 10%;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
+    background-color: white;
+    z-index: 10;
 
     .name {
       width: 90%;
